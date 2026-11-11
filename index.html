@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta | Inclusão Digital</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Conecta ♡</h1>
+        <p>Conectando pessoas através da acessibilidade.</p>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <h2>Comunicação para todos!</h2>
+
+            <p>
+                O Conecta é uma plataforma que busca tornar
+                o ambiente digital mais acessível para pessoas surdas,
+                aproximando a comunicação em português e Libras.
+            </p>
+        </section>
+
+        <section class="tradutor">
+
+            <h2>Tradutor de Libras</h2>
+
+            <p>
+                Digite uma frase e utilize o avatar do VLibras
+                para acompanhar a tradução.
+            </p>
+
+            <label for="texto">
+                Digite seu texto:
+            </label>
+
+            <textarea
+                id="texto"
+                placeholder="Digite aqui a frase que deseja traduzir..."
+            ></textarea>
+
+            <button id="traduzir">
+                Exibir frase
+            </button>
+
+            <div class="resultado">
+                <h3>Texto para tradução:</h3>
+
+                <p id="fraseResultado">
+                    Sua frase aparecerá aqui.
+                </p>
+            </div>
+
+            <p class="instrucao">
+                Utilize o avatar do VLibras no canto da tela
+                para acessar a tradução em Libras.
+            </p>
+
+        </section>
+
+        <section class="importancia">
+
+            <h2>Por que a acessibilidade importa?</h2>
+
+            <p>
+                A inclusão digital permite que pessoas surdas
+                tenham mais autonomia para acessar informações,
+                estudar e participar de diferentes ambientes digitais.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Conecta © 2026 | Tecnologia e inclusão</p>
+    </footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget(
+            'https://vlibras.gov.br/app'
+        );
+    </script>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
